@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "name": "sho-cms-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for SHO CMS Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack-dev-server --colors --progress --hot --inline --config \"./webpack.config.js\"",
+    "build": "npm i && NODE_ENV=production ./node_modules/.bin/webpack --colors --progress --config \"./webpack.config.js\"",
+    "init-env": "node -e \"require('fs').writeFileSync('env.js', require('fs').readFileSync('env.example.js'));\"",
+    "boilerplate": "npm i && rm -rf .git && git init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sho-cms-dashboard.git"
+  },
+  "keywords": [
+    "wearesho",
+    "cms",
+    "laravel",
+    "dashboard"
+  ],
+  "author": "Alexander Letnikow",
+  "license": "MIT",
+  "homepage": "https://github.com/Horat1us/sho-cms-dashboard",
+  "dependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "breakpoint-sass": "^2.7.1",
+    "compass-mixins": "^0.12.10",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "node-sass": "^4.5.2",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "susy": "^2.2.12",
+    "webpack": "^2.3.2",
+
+    "axios": "^0.15.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.4.2"
+  }
+}
