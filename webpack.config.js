@@ -81,7 +81,8 @@ if(!debug){
             compressor: {
                 warnings: false
             },
-            minimize: true
+            minimize: true,
+            comments: false,
         })
     );
 }

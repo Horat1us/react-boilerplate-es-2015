@@ -3,3 +3,4 @@ npm-debug.log
 env.js
 web
 !web/index.html
+node_modules
