@@ -1,5 +1,6 @@
 webpack = require('webpack');
 path = require('path');
+fs = require('fs');
 
 var debug = process.env.NODE_ENV !== "production";
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -28,7 +29,7 @@ webpackConfig = {
         extensions: ['.js', '.jsx'],
         alias: {
             config: path.resolve('./config/config.' + (debug ? 'local' : 'prod') + '.js'),
-            envConfig: path.resolve('./env.js'),
+            envConfig: fs.existsSync('./env.js') ? path.resolve('./env.js') : path.resolve('./env.example.js'),
             images: path.resolve('./images'),
         },
         modules: [path.resolve('./react'), path.resolve('./styles'), 'node_modules'],
