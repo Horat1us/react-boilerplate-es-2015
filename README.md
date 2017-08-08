@@ -1,4 +1,5 @@
 # React API Boilerplate
+## ** THIS PACKAGE IS DEPRECATED AND INCLUDES A LOT OF MISTAKES. YOU CAN USE [TYPESCRIPT BOILERPLATE](https://github.com/Horat1us/typescript-react-boilerplate) INSTEAD **
 *Created by [Alexander Letnikow](https://github.com/)* 
 
 This boilerplate created for front-end React-based applications with any RESTful API.  
